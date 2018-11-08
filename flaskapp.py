@@ -1951,24 +1951,6 @@ def sitemap(edit):
     return set_css() + "<div class='container'><nav>" + directory + \
              "</nav><section><h1>Site Map</h1>" + sitemap + \
              "</section></div></body></html>"
-def sitemap2(head):
-    """sitemap for static content generation"""
-    edit = 0
-    not_used_head, level, page = parse_content()
-    directory = render_menu2(head, level, page)
-    sitemap = render_menu2(head, level, page, sitemap=1)
-    return set_css2() + "<div class='container'><nav>" + directory + \
-             "</nav><section><h1>Site Map</h1>" + sitemap + \
-             "</section></div></body></html>"
-
-
-def sizeof_fmt(num):
-    """size formate"""
-    for x in ['bytes','KB','MB','GB']:
-        if num < 1024.0:
-            return "%3.1f%s" % (num, x)
-        num /= 1024.0
-    return "%3.1f%s" % (num, 'TB')
 @app.route('/ssavePage', methods=['POST'])
 def ssavePage():
     """seperate save page function"""
@@ -2012,6 +1994,24 @@ def ssavePage():
         return redirect("/")
 
 
+def sitemap2(head):
+    """sitemap for static content generation"""
+    edit = 0
+    not_used_head, level, page = parse_content()
+    directory = render_menu2(head, level, page)
+    sitemap = render_menu2(head, level, page, sitemap=1)
+    return set_css2() + "<div class='container'><nav>" + directory + \
+             "</nav><section><h1>Site Map</h1>" + sitemap + \
+             "</section></div></body></html>"
+
+
+def sizeof_fmt(num):
+    """size formate"""
+    for x in ['bytes','KB','MB','GB']:
+        if num < 1024.0:
+            return "%3.1f%s" % (num, x)
+        num /= 1024.0
+    return "%3.1f%s" % (num, 'TB')
 def syntaxhighlight():
     return '''
 <script type="text/javascript" src="/static/syntaxhighlighter/shCore.js"></script>
@@ -2060,9 +2060,12 @@ def syntaxhighlight():
 <script src="https://scrum-3.github.io/web/brython/brython.js"></script>
 <script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
 -->
+<style>
+img {
+   border: 3px solid orange;
+}
+</style>
 '''
-
-
 
 def syntaxhighlight2():
     return '''
@@ -2112,6 +2115,11 @@ init_mathjax();
 <script src="https://scrum-3.github.io/web/brython/brython.js"></script>
 <script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
 -->
+<style>
+img {
+   border: 3px solid red;
+}
+</style>
 '''
 
 

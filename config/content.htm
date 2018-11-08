@@ -18,7 +18,15 @@
 <p>如何開啟python</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/R-CaCV68QgM?feature=youtu" width="560"></iframe></p>
 <h2>Week2</h2>
-<p></p>
+<p>圖框</p>
+<p><img alt="" height="297" src="/images/截圖2.jpg" width="378"/></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">@app.route('/delete_file'.methods=['POST'])
+def delete_file():
+  """Dekete user uploaded files."""
+  if not isAdmin():
+      return redirect("/login")
+  head,level,page =parse_content()
+  directory =render_menu(head,level,page)</pre>
 <h2>Week3</h2>
 <p>git 基本練習</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/qwL6B_BUq6I?feature=youtu" width="560"></iframe></p>
