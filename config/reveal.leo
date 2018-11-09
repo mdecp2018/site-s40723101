@@ -21,6 +21,9 @@
 <v t="leo.20180827201621.6" a="E"><vh>body</vh>
 <v t="leo.20180827201621.7" a="E"><vh>reveal div</vh>
 <v t="leo.20180827201621.8" a="E"><vh>slides div</vh>
+<v t="leo.20181109105325.1" a="E"><vh>封面投影片</vh>
+<v t="leo.20181109105325.2"><vh>封面投影片內容</vh></v>
+</v>
 <v t="leo.20180827201621.9" a="E"><vh>封面投影片</vh>
 <v t="leo.20180827201621.10"><vh>封面投影片內容</vh></v>
 </v>
@@ -325,6 +328,27 @@ make.start()
 
 
 						
+</t>
+<t tx="leo.20181109105325.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181109105325.2">## 40723101網際簡報
+
+### 虎科大機械設計工程系
+
+&lt;small&gt;
+Created by [KMOLab](http://lab.kmol.info/)
+&lt;/small&gt;
+
+[*網站](https://mdecp2018.github.io/site-s40723101)
+
+[*網誌](http://mdecp2018.github.io/site-s40723101/blog)
 </t>
 </tnodes>
 </leo_file>
