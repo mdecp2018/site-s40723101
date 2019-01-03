@@ -1,0 +1,7 @@
+@app.route('/delete_file', methods= ['POST'])
+def delete_file():
+  """Dekete user uploaded files."""
+  if not isAdmin():
+      return redirect("/login")
+  head,level,page =parse_content()
+  directory =render_menu(head,level,page)
