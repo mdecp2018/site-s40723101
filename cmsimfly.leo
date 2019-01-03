@@ -1007,7 +1007,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 --&gt;
 &lt;style&gt;
 img {
-   border: 3px solid orange;
+   border: 5px solid red;
 }
 &lt;/style&gt;
 '''
