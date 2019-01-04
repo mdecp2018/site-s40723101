@@ -2062,7 +2062,7 @@ def syntaxhighlight():
 -->
 <style>
 img {
-   border: 5px solid red;
+   border: 5px solid pink;
 }
 </style>
 '''
